@@ -1,0 +1,49 @@
+.cardWrapper {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #979797;
+  margin-top: 4px;
+  .cardBody {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+    &:is(:first-child) {
+      margin-top: 5px;
+    }
+    &:is(:last-child) {
+      margin-bottom: 5px;
+    }
+    &:hover {
+      background-color: #e5e5e5;
+      cursor: pointer;
+    }
+    div:is(:first-child) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .contentWrap {
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+      }
+      .category {
+        color: #777777;
+      }
+      .text {
+        span {
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
+.searchWrapper {
+  display: flex;
+}
